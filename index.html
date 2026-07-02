@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | App</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">               
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -11,41 +14,52 @@
         <div class="sidebar">
             <div class="logo-bg">
                 <img src="./assets/odin-lined.png" alt="Logo" class="logo">
-                <span class="logo-text">ODIN</span>
+                <h1 class="logo-text">ODIN</h1>
             </div>
-            <img src="./assets/bg.png" alt="Background" class="bg">
-            <span class="credits-bg">Image by Person on Unsplash</span>
+            <!-- <img src="./assets/bg.png" alt="Background" class="bg"> Add this via CSS -->
+            <span class="credits-bg">Photo by Halie West on Unsplash</span>
         </div>
         <div class="main">
             <div class="header-section">
-                <span class="text">This is not an online service. You know you need something like this in your life to help you realize your deepest dreams.</span>
-                <span class="text">Sign up <em>now</em> to get started.</span>
-                <br>
-                <span class="text">You <em>know</em> you want to</span>
+                <p class="text">This is not an online service. You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p class="text">Sign up <em>now</em> to get started.</p>
+                <p class="text">You <em>know</em> you want to</p>
             </div>
             <div class="form-section">
-                <div class="form">
-                    <div class="form-row-name">
-                        <label for="first-name">First Name</label>
-                        <input type="text" class="first-name" id="first-name">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" class="last-name" id="last-name">
+                <p class="form-msg">Let's do this!</p>
+                <form action="" class="form">
+                    <div class="inputs">
+                        <div class="field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="lastName" id="last-name" placeholder="Doe..." required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+123 456 789..." required>
+                        </div>
+                        <div class="field">
+                            <label for="pass">Password</label>
+                            <input type="password" name="password" id="pass" required>
+                        </div>
+                        <div class="field">
+                            <label for="pass-confirm">Confirm Password</label>
+                            <input type="password" name="password-confirm" id="pass-confirm" required>
+                        </div>
                     </div>
-                    <div class="form-row-email-num">
-                        <label for="email">Email</label>
-                        <input type="email" class="email" id="email">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" class="phone" id="phone">
+                    <div class="submit-section">
+                        <button type="submit" class="submit">Create account</button>
+                        <p class="log-in-q">Already have an account? <a href="#">Log in</a></p>
                     </div>
-                    <div class="form-row-pass">
-                        <label for="pass">Password</label>
-                        <input type="password" class="pass">
-                        <label for="pass-confirm">Confirm password</label>
-                        <input type="password" class="pass-confirm" id="pass-confirm">
-                    </div>
-                </div>
+                </form>
             </div>
-            <div class="submit-section"></div>
         </div>
     </div>
     <script src="./script.js"></script>
