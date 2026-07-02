@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Inter' ,sans-serif, system-ui;
+    /*outline: 2px solid red;*/
 }
+
 
 .app {
 	display: flex;
@@ -49,8 +51,102 @@
     display: flex;
     flex-direction: column;
     background: #f9fafb;
+    justify-content: center;
 }
 
 .logo {
 	height: 100px;
+}
+
+.header-section {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.sub-hero {
+    margin-top: 24px;
+}
+
+.form-section {
+    /*padding: 16px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-msg {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.inputs {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    box-shadow: 0 5px 5px 3px lightgray;
+}
+
+.form {
+    display: flex;
+    /*padding: 8px;*/
+    flex-direction: column;
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 50%;
+}
+
+input {
+    border-radius: 6px;
+    border: 2px solid #E5E7EB;
+    padding: 8px;
+}
+
+#pass:user-invalid, #pass-confirm:user-invalid {
+    border: 2px solid red;
+}
+
+.submit {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 6px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+
+.log-in-q {
+    margin-top: 4px;
+    padding: 4px;
+}
+
+.login-lnk {
+    color: #596D48;
+    text-decoration: none;
+    text-weight: 900;
+}
+.submit-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    padding: 8px;
 }
