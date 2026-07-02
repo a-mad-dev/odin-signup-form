@@ -7,7 +7,47 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="app"></div>
+    <div class="app">
+        <div class="sidebar">
+            <div class="logo-bg">
+                <img src="./assets/odin-lined.png" alt="Logo" class="logo">
+                <span class="logo-text">ODIN</span>
+            </div>
+            <img src="./assets/bg.png" alt="Background" class="bg">
+            <span class="credits-bg">Image by Person on Unsplash</span>
+        </div>
+        <div class="main">
+            <div class="header-section">
+                <span class="text">This is not an online service. You know you need something like this in your life to help you realize your deepest dreams.</span>
+                <span class="text">Sign up <em>now</em> to get started.</span>
+                <br>
+                <span class="text">You <em>know</em> you want to</span>
+            </div>
+            <div class="form-section">
+                <div class="form">
+                    <div class="form-row-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" class="first-name" id="first-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="last-name" id="last-name">
+                    </div>
+                    <div class="form-row-email-num">
+                        <label for="email">Email</label>
+                        <input type="email" class="email" id="email">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="phone" id="phone">
+                    </div>
+                    <div class="form-row-pass">
+                        <label for="pass">Password</label>
+                        <input type="password" class="pass">
+                        <label for="pass-confirm">Confirm password</label>
+                        <input type="password" class="pass-confirm" id="pass-confirm">
+                    </div>
+                </div>
+            </div>
+            <div class="submit-section"></div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

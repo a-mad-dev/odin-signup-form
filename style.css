@@ -1,0 +1,23 @@
+:root {
+	--logo-font: "Norse Bold";
+	--main-font: sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.app {
+	height: 100vh;
+}
+
+.bg {
+	height: 600px;
+	width: auto;
+}
+
+.logo-bg {
+	background-color: rgba(0,0,0, 0.3);
+}
